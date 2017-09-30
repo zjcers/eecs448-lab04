@@ -46,6 +46,16 @@ function validate()
     if(not(isValid)) {
         alert("All quantities must be whole numbers, zero or more");
     }
+    //Check username and password
+    //(Sorry for the eldritch horror of a regex)
+    if (not(/^(([a-zA-Z])+([a-zA-Z0-9])*)\@(([a-z])+([a-z0-9])*)\.([a-z]+)$/.test(form["username"].value))) {
+        alert("Username must be a valid email");
+        return false;
+    }
+    if (form["password"].value.length < 1) {
+        alert("Password must contain at least one character");
+        return false;
+    }
     return isValid;
 }
 var shippingPrices = {
