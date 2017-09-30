@@ -1,0 +1,30 @@
+body {
+    background-color: lightgrey;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+label {
+    font-weight: bold;
+}
+div.card-holder {
+    overflow: auto;
+    margin-bottom: 1em;
+}
+div.item-card {
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    border: slateblue;
+    border-style: solid;
+    border-radius: 1em;
+}
+div.item-content {
+    margin: 1em;
+}
+strong {
+    display: block;
+    text-align: center;
+}
+input {
+    width: 5em;
+}

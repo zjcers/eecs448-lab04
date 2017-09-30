@@ -14,19 +14,25 @@
         <h3>Items</h3>
         <div class="card-holder">
             <div class="item-card">
-                <h5>Bananas</h5>
-                <label>Price:</label> $1.00<br/>
-                <label>Quantity:</label> <input type="number" name="quan-banana" value="0">
+                <div class="item-content">
+                    <strong class="item-name">Bananas</strong><br/>
+                    <label>Price:</label> $<span id="price-banana">1.00</span><br/>
+                    <label>Quantity:</label> <input type="number" name="quan-banana" value="0">
+                </div>
             </div>
             <div class="item-card">
-                <h5>Apples</h5>
-                <label>Price:</label> $5.00<br/>
-                <label>Quantity:</label> <input type="number" name="quan-apple" value="0">
+                <div class="item-content">
+                    <strong class="item-name">Apples</strong><br/>
+                    <label>Price:</label> $<span id="price-apple">5.00</span><br/>
+                    <label>Quantity:</label> <input type="number" name="quan-apple" value="0">
+                </div>
             </div>
             <div class="item-card">
-                <h5>Grapefruit</h5>
-                <label>Price:</label> $0.50<br/>
-                <label>Quantity:</label> <input type="number" name="quan-grapefruit" value="0">
+                <div class="item-content">
+                    <strong class="item-name">Grapefruit</strong><br/>
+                    <label>Price:</label> $<span id="price-grapefruit">0.50</span><br/>
+                    <label>Quantity:</label> <input type="number" name="quan-grapefruit" value="0">
+                </div>
             </div>
         </div>
         <label>Subtotal: </label><output name="subtotal">$0.00</output><br/>
