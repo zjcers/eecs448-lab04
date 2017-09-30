@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="formChecker.js"></script>
+    <title>Lab 4 Store</title>
+</head>
+<body>
+    <h1>Welcome to the Lab 4 Store</h1>
+    <hr/>
+    <form action="customerBackend.php" method="post" onsubmit="validate();" onchange="subTotal();">
+        <h3>Items</h3>
+        <div class="card-holder">
+            <div class="item-card">
+                <h5>Bananas</h5>
+                <label>Price:</label> $1.00<br/>
+                <label>Quantity:</label> <input type="number" name="quan-banana" value="0">
+            </div>
+            <div class="item-card">
+                <h5>Apples</h5>
+                <label>Price:</label> $5.00<br/>
+                <label>Quantity:</label> <input type="number" name="quan-apple" value="0">
+            </div>
+            <div class="item-card">
+                <h5>Grapefruit</h5>
+                <label>Price:</label> $0.50<br/>
+                <label>Quantity:</label> <input type="number" name="quan-grapefruit" value="0">
+            </div>
+        </div>
+        <label>Subtotal: </label><output name="subtotal">$0.00</output><br/>
+        <label>Shipping: </label>
+        <select name="shipping">
+            <option value="free">Free 7-day</option>
+            <option value="overnight">$50.00 Overnight</option>
+            <option value="3day">$5.00 3-day</option>
+        </select>
+        <br/>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
