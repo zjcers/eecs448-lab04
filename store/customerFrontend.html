@@ -10,7 +10,7 @@
 <body>
     <h1>Welcome to the Lab 4 Store</h1>
     <hr/>
-    <form action="customerBackend.php" method="post" onsubmit="return validate();" onchange="subTotal();" name="store">
+    <form action="customerBackend.php" method="post" onsubmit="return validate();" onchange="makeTotal();" name="store">
         <h3>Items</h3>
         <div class="card-holder">
             <div class="item-card">
@@ -43,6 +43,7 @@
             <option value="3day">$5.00 3-day</option>
         </select>
         <br/>
+        <label>Total: </label><output name="total">$0.00</output><br/>
         <input type="reset" value="Reset">
         <input type="submit" value="Submit">
     </form>
